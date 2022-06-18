@@ -3,16 +3,13 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 char[] arr = number.ToString().ToCharArray();
 
-for (int i = 0; i < arr.Length; i++) {
-        if (arr[i] != arr[arr.Length - (i + 1)]) {
-            Console.WriteLine($" Это чисто {number} - полиндром");
-            break;
-        // } else {
-            // Console.WriteLine($" Это число {number} - НЕ полиндром!");
-            // break;
+        if (arr[0] == arr[4] && arr[1] == arr[3]) {
+            Console.WriteLine($"Это число {number} - Полиндром!");
+        } else {
+            Console.WriteLine($"Это число {number} - НЕ полиндром!");
         }
-}
 
+//                 ВАРИАНТ 2
 
 // Console.WriteLine("Введите 5-значное число: ");
 // int number = Convert.ToInt32(Console.ReadLine());

@@ -1,5 +1,5 @@
 ﻿void Distance (int x, int x1, int y, int y1, int z, int z1) {
-    double distance = Math.Sqrt((Math.Pow(x1 - x)) + (Math.Pow(y1 - y)) + (Math.Pow(z1 - z)));
+    double distance = Math.Sqrt((x1 - x)*(x1 - x) + (y1 - y)*(y1 - y) + (z1 - z)*(z1 - z));
     Console.WriteLine($"Расстояние: {distance}");
 }
 
