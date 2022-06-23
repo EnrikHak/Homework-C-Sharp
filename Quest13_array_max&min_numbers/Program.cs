@@ -2,7 +2,7 @@
 
     double[] array = new double [10];
     for (int i = 0; i < array.Length; i++) {
-        array[i] = new Random().Next(-99,100);
+        array[i] = new Random().Next(-99,100) + new Random().NextDouble();
     }
     return array;
 }
