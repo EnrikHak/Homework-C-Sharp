@@ -1,20 +1,16 @@
-﻿int Fibonaci() {
-    
-    Console.WriteLine("Введите число до которого нужно считать: ");
-    int n = Convert.ToInt32(Console.ReadLine());
-
-    int a = 0;
-    int b = 1;
-
-    for (int i = 0; i < n; i++) {
-        int sum = a;
-        a = b;
-        b = sum + b;
-        Console.Write($"{b} ");
+﻿int Fibonaci(int num) {
+    if (num == 0) {
+        return 0;
     }
-    return b;
+    if (num == 1 || num == 2) {
+        return 1;
+    } else {
+        return Fibonaci(num - 1) + Fibonaci (num - 2);
+    }
 }
+Console.WriteLine("Введите число до которого необходимо посчитать: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-
-
-Fibonaci();
+for (int i = 0; i < number; i++) {
+        Console.Write($"{Fibonaci(i)} ");
+    }
