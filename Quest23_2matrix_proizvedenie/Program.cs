@@ -27,9 +27,9 @@ void PrintMatrix(int[,] array) {
 
 int[,] ProizArray(int[,] matrix1, int[,] matrix2, int[,] matrix3) {
 
-    for (int i = 0; i < matrix1.GetLength(0); i++ ) {
+    for (int i = 0; i < matrix3.GetLength(0); i++ ) {
         for (int j = 0; j < matrix2.GetLength(1); j++) {
-            for (int p = 0; p < matrix3.GetLength(1); p++) {
+            for (int p = 0; p < matrix1.GetLength(1); p++) {
                 matrix3[i, j] = matrix1[i, p] * matrix2[p, j];
             }
         }
